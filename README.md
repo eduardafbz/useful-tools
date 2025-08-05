@@ -33,7 +33,7 @@ Desafio proposto pelo repositório de [Backend Challenges da BossaBox](https://g
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/useful-tools.git
+git clone https://github.com/eduardafbz/useful-tools.git
 cd useful-tools
 ````
 
