@@ -90,4 +90,4 @@ http://localhost:3000
 
 ## 🙋 Sobre
 
-Desenvolvido por Maria Eduarda Braz(https://github.com/eduardafbz) como parte do desafio da [BossaBox](https://github.com/CollabCodeTech/backend-challenges).
+Desenvolvido por Maria Eduarda Braz (https://github.com/eduardafbz) como parte do desafio da [BossaBox](https://github.com/CollabCodeTech/backend-challenges).
