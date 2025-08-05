@@ -21,7 +21,7 @@ Desafio proposto pelo repositório de [Backend Challenges da BossaBox](https://g
 
 ---
 
-## 📦 Como executar o projeto
+## Como executar o projeto
 
 ### Pré-requisitos
 
@@ -77,7 +77,7 @@ http://localhost:3000
 
 ---
 
-## ✅ Diferenciais (Bônus)
+## Diferenciais (Bônus)
 
 * [x] **Organização em camadas (Controller, Service, Repository)**
 * [ ] **Migrations com Flyway**
@@ -88,6 +88,6 @@ http://localhost:3000
 
 ---
 
-## 🙋 Sobre
+## Sobre
 
 Desenvolvido por Maria Eduarda Braz (https://github.com/eduardafbz) como parte do desafio da [BossaBox](https://github.com/CollabCodeTech/backend-challenges).
