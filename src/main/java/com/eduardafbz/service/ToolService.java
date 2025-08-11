@@ -34,12 +34,13 @@ public class ToolService implements Serializable {
         .orElseThrow(() -> new RuntimeException("Tool not found with tag: " + tag));
     }
 
-    public Tool update(Long id, String newName, String newLink, String newDescription, String newTag) {
+    public Tool update(Long id, Tool updatedTool) {
         Tool tool = toolRepository.findById(id).orElseThrow(() -> new RuntimeException("Id " + id + " not found!"));
-        tool.setName(newName);
-        tool.setLink(newLink);
-        tool.setDescription(newDescription);
-        tool.setTags(newTag);
+        tool.setName(updatedTool.getName());
+        tool.setLink(updatedTool.getLink());
+        tool.setDescription(updatedTool.getDescription());
+        tool.setTags(updatedTool.getTags());
+
         return toolRepository.save(tool);
     }
 

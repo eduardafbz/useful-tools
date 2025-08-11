@@ -1,5 +1,7 @@
 package com.eduardafbz.model;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.persistence.Column;
@@ -37,6 +39,6 @@ public class Tool {
 
     @ElementCollection //armazena uma lista simples
     @JsonProperty("tags")
-    private String tags;
+    private List<String> tags; //importado lista
     
 }
