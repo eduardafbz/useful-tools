@@ -29,9 +29,12 @@ public class ToolService implements Serializable {
         .orElseThrow(() -> new RuntimeException("Tool not found with name: " + name));
     }
 
-    public Tool findByTag(String tag) {
-        return toolRepository.findByTag(tag)
-        .orElseThrow(() -> new RuntimeException("Tool not found with tag: " + tag));
+    public List<Tool> findByTag(String tag) {
+        List<Tool> tools = toolRepository.findByTag(tag);
+        if(tools.isEmpty()) {
+            throw new RuntimeException("Tool not found with tag: " + tag);
+        }
+        return tools;
     }
 
     public Tool update(Long id, Tool updatedTool) {

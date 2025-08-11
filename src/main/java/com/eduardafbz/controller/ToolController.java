@@ -43,8 +43,8 @@ public class ToolController implements Serializable {
     }
 
     @GetMapping("/tag")
-    public ResponseEntity<?> findByTag(@RequestBody String tag) {
-        Tool tool = toolService.findByTag(tag);
+    public ResponseEntity<?> findByTag(@RequestParam String tag) {
+        List<Tool> tool = toolService.findByTag(tag);
         return ResponseEntity.ok().body(tool);
     }
 

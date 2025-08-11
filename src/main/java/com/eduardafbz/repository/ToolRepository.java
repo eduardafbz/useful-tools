@@ -11,5 +11,5 @@ import com.eduardafbz.model.Tool;
 @Repository
 public interface ToolRepository extends JpaRepository<Tool, Long> {
     Optional<Tool> findByName(String nome);
-    Optional<Tool> findByTag(List<String> tag);
+    List<Tool> findByTag(String tag);
 }
